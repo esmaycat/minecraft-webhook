@@ -19,6 +19,7 @@ PATTERNS = (
     re.compile(r'\[\d\d:\d\d:\d\d\] \[Server thread\/INFO\]: ([^\s]+ left the game)'),
     re.compile(r'\[\d\d:\d\d:\d\d\] \[Server thread\/INFO\]: ([^\s]+ joined the game)'),
     re.compile(r'\[\d\d:\d\d:\d\d\] \[Server thread\/INFO\]: (<[^\s]+> .+)'),
+    re.compile(r'\[\d\d:\d\d:\d\d\] \[Server thread\/INFO\]: ([^\s]+ has made the advancement \[.+\])')
 )
 
 if len(sys.argv) != 2:
