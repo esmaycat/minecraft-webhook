@@ -19,7 +19,9 @@ PATTERNS = (
     re.compile(r'\[\d\d:\d\d:\d\d\] \[Server thread\/INFO\]: ([^\s]+ left the game)'),
     re.compile(r'\[\d\d:\d\d:\d\d\] \[Server thread\/INFO\]: ([^\s]+ joined the game)'),
     re.compile(r'\[\d\d:\d\d:\d\d\] \[Server thread\/INFO\]: (<[^\s]+> .+)'),
-    re.compile(r'\[\d\d:\d\d:\d\d\] \[Server thread\/INFO\]: ([^\s]+ has made the advancement \[.+\])')
+    re.compile(r'\[\d\d:\d\d:\d\d\] \[Server thread\/INFO\]: ([^\s]+ has made the advancement \[.+\])'),
+    re.compile(r'\[\d\d:\d\d:\d\d\] \[Server thread\/INFO\]: ([^\s]+ has reached the goal \[.+\])'),
+    re.compile(r'\[\d\d:\d\d:\d\d\] \[Server thread\/INFO\]: ([^\s]+ has completed the challenge \[.+\])')
 )
 
 if len(sys.argv) != 2:
