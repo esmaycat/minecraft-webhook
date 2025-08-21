@@ -86,8 +86,6 @@ class EventHandler(FileSystemEventHandler):
 
 
 def main():
-    print('Hello from minecraft-webhook!')
-
     if len(sys.argv) != 2:
         print('Invalid argument.', file=sys.stderr)
         sys.exit(1)
@@ -98,6 +96,8 @@ def main():
     except OSError:
         print(f"'{_fp}' does not exist.", file=sys.stderr)
         sys.exit(1)
+
+    print(f"Watching log file at '{fp}'.", file=sys.stderr)
 
     observer = Observer()
     observer.schedule(EventHandler(fp), str(fp.parent))
